@@ -1,0 +1,98 @@
+
+/* Footer Container */
+.annimate-footer{
+    position:relative;
+    padding:60px 20px;
+    overflow:hidden;
+    text-align:center;
+    /*background:#07121f;*/
+    border-radius:12px;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/bg-footer.jpg');
+    /*margin:40px auto;*/
+}
+
+/* Animated Border Glow */
+.annimate-footer:before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:inherit;
+    padding:1px;
+    background:linear-gradient(127deg,#7ee1fa,transparent 40%),
+               linear-gradient(-53deg,#7ee1fa,transparent 40%);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events:none;
+}
+
+/* Footer Text */
+.footer-text{
+    position:relative;
+    z-index:2;
+    color:#ccc;
+    font-size:18px;
+}
+
+.footer-text span{
+    color:#ff4d6d;
+}
+
+/* Line Wrappers */
+.cta__line-wrap-1,
+.cta__line-wrap-2{
+    position:absolute;
+    width:100%;
+    overflow:hidden;
+    left:0;
+}
+
+.cta__line-wrap-1{
+    top:0;
+}
+
+.cta__line-wrap-2{
+    bottom:0;
+}
+
+/* Line Track */
+.line-track{
+    display:flex;
+    gap:120px;
+    width:200%;
+}
+
+/* Top line animation */
+.cta__line-wrap-1 .line-track{
+    animation:scrollRight 10s linear infinite;
+}
+
+/* Bottom line animation */
+.cta__line-wrap-2 .line-track{
+    animation:scrollLeft 10s linear infinite;
+}
+
+/* Animations */
+@keyframes scrollRight{
+    from{ transform:translateX(50%); }
+    to{ transform:translateX(0); }
+}
+
+@keyframes scrollLeft{
+    from{ transform:translateX(0); }
+    to{ transform:translateX(50%); }
+}
+
+@media(max-width:767px){
+    .annimate-footer{
+        padding:30px 0px;
+    }
+    .footer-text{
+        font-size: 16px;
+    }
+}
