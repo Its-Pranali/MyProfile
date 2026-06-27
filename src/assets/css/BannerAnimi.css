@@ -1,6 +1,6 @@
 .tmp-banner-circle .tmp-banner-circle-1 {
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 35%;
     animation: services-triangle 5s linear infinite alternate;
 }
@@ -17,7 +17,7 @@
 
 .tmp-banner-circle .tmp-banner-circle-3 {
     position: absolute;
-    top: 30%;
+    top: 10%;
     right: 32%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -28,12 +28,12 @@
 .tmp-banner-circle-4 {
     position: absolute;
     right: 32%;
-    bottom: 20%;
+    top: 20%;
     animation: services-triangle 8s linear infinite alternate;
 }
 
 .tmp-banner-circle img {
-    z-index: 2;
+    z-index: 99;
     max-width: 100%;
 }
 

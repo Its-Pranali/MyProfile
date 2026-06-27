@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('./assets/fonts/JosefinSans-Medium.ttf') format('truetype');
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'LatoBold';
+    src: url('./assets/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 400;
+}
+
 .me-img:before {
     content: "";
     position: absolute;
@@ -286,21 +311,21 @@ svg:not(:root) {
 }
 
 .sub-heading {
-    font-family: "Rubik", Sans-serif;
+    font-family: "Rubik";
     font-size: 18px;
     font-weight: 600;
     color: #FFFFFF;
 }
 
 .heading {
-    font-family: "Josefin Sans", Sans-serif;
+    font-family: "Josefin Sans";
     font-size: 50px;
     font-weight: 600;
     color: #FFFFFF;
 }
 
 .text {
-    font-family: "Lato", Sans-serif;
+    font-family: "Lato";
     font-size: 16px;
     font-weight: 400;
     color: #FFFFFF;
@@ -316,6 +341,48 @@ svg:not(:root) {
     background-color: #01091D;
 }
 
+.exp-heading {
+    font-family: "Rubik", Sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.job-type {
+    font-family: "Lato", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.check-icon {
+    background: linear-gradient(to right, rgba(59, 130, 246, 0.2), rgba(168, 85, 247, 0.2));
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.company-name {
+    font-family: "LatoBold", Sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.tech {
+    font-family: "Rubik", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.exp-btn {
+    height: 40px !important;
+    padding: 0px 15px;
+}
+
+.exp-btn.btn-border {
+    line-height: 35px !important;
+    text-decoration: none;
+}
 
 .counter-card:before {
     content: "";
@@ -361,14 +428,14 @@ svg:not(:root) {
 
 .counter-count {
     color: #6ec1e4;
-    font-family: "Lato", Sans-serif;
+    font-family: "Lato";
     font-size: 50px;
     font-weight: 600;
 }
 
 .counter-text {
     color: #54595f;
-    font-family: "Lato", Sans-serif;
+    font-family: "Lato";
     font-size: 18px;
     font-weight: 400;
 }
@@ -449,4 +516,100 @@ svg:not(:root) {
     .tech-btn {
         flex-wrap: wrap !important;
     }
+}
+
+.skill-sec {
+    background-color: #010A10;
+}
+
+.skill-card {
+    box-shadow: 4px 4px 0 0 rgba(20, 155, 252, .11);
+    border: 1px solid #FFFFFF1A;
+    border-radius: 15px;
+    padding: 20px;
+    transition: background var(--background-transition, .3s), border var(--border-transition, .3s), box-shadow var(--border-transition, .3s), transform var(--e-con-transform-transition-duration, .4s);
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #f2f2f2 !important;
+}
+
+.skill-heading {
+    font-family: "Lato", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.skill-icon svg {
+    fill: #fff;
+    width: 40px;
+    padding: 10px;
+
+}
+
+.skill-icon {
+    border: 1px solid #FFFFFF !important;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FFFFFF;
+    transition: transform 0.6s ease-in-out;
+}
+
+.globe-icon {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+
+}
+
+.globe-icon:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+.skill-text {
+    font-family: "Lato", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #7A7A7A;
+}
+
+.tech-skill-icon {
+    background: #FFFFFF0D;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF1A;
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s, transform var(--e-transform-transition-duration, .4s);
+    width: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.tech-skill-heading {
+    font-family: "Lato", Sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.front-end-icon:hover {
+    border: 2px solid #e44aa5 !important;
+    box-shadow: rgb(228 74 165 / 40%) 0px 14px 28px, rgb(168 85 246 / 24%) 0px 10px 10px;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.cms-icon {
+    background: linear-gradient(to right, #ef4444, #f97316);
+}
+
+.tech-skill-icon svg {
+    width: 35px;
+}
+
+.cms:hover {
+    border: 2px solid #d5732a !important;
+    box-shadow: rgb(241 75 61 / 45%) 0px 14px 28px, rgb(248 109 28 / 41%) 0px 10px 10px;
+    transform: translateY(-5px) scale(1.05);
 }
