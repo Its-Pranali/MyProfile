@@ -16,12 +16,12 @@ function Home() {
                             <h1 className="heading">Pranali Nikam</h1>
                             <p className="text">Crafting modern, responsive, and user-centric websites with React, WordPress & modern front-end technologies.
                                 Turning great ideas into real digital experiences.</p>
-                            <div className="cons_w_wrapper download-resume"> <a href="https://pranalinikam.22web.org/wp-content/uploads/2026/02/Pranali-Nikam.pdf" download="" className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
+                            <div className="cons_w_wrapper download-resume"> <a href="assets/images/Pranali_S_Nikam.pdf" download="" className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
                                 <span className="icon-reverse-wrapper">
                                     <span className="btn-text">Download Resume</span>
                                     <span className="btn-hack"></span>
-                                    <img decoding="async" src="../../../public/assets/images/btg-bg.svg" alt="" className="btn-bg" />
-                                    <img decoding="async" src="../../../public/assets/images/btg-bg-2.svg" alt="" className="btn-bg-hover" />
+                                    <img decoding="async" src="assets/images/btg-bg.svg" alt="" className="btn-bg" />
+                                    <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" className="btn-bg-hover" />
                                     <span className="btn-icon">
                                         <i><svg className="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
@@ -123,8 +123,8 @@ function Home() {
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Full Time</span>
                                         <span class="btn-hack"></span>
-                                        <img decoding="async" src="https://marketifythemes.net/wp/virtuo/1/wp-content/themes/virtuo/assets/img/btg-bg.svg" alt="" class="btn-bg" />
-                                        <img decoding="async" src="https://marketifythemes.net/wp/virtuo/1/wp-content/themes/virtuo/assets/img/btg-bg-2.svg" alt="" class="btn-bg-hover" />
+                                        <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
+                                        <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
                                         <span class="btn-icon">
                                             <i><svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
@@ -168,8 +168,8 @@ function Home() {
                                     <span class="icon-reverse-wrapper">
                                         <span class="btn-text">Full Time</span>
                                         <span class="btn-hack"></span>
-                                        <img decoding="async" src="https://marketifythemes.net/wp/virtuo/1/wp-content/themes/virtuo/assets/img/btg-bg.svg" alt="" class="btn-bg" />
-                                        <img decoding="async" src="https://marketifythemes.net/wp/virtuo/1/wp-content/themes/virtuo/assets/img/btg-bg-2.svg" alt="" class="btn-bg-hover" />
+                                        <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
+                                        <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
                                         <span class="btn-icon">
                                             <i><svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
