@@ -246,11 +246,11 @@ function Home() {
                                         <h3 className="tech-skill-heading">Bootstrap</h3>
                                     </div>
                                     <div className="front-end-icon tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/tailwindcss-img.png" alt="Tailwind CSS" className="tailwind-icon" />
+                                        <img src="assets/images/tailwindcss-img.png" alt="Tailwind CSS" className="tailwind-icon" />
                                         <h3 className="tech-skill-heading">Tailwind CSS</h3>
                                     </div>
                                     <div className="front-end-icon tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/typescript.png" alt="TypeScript" className="tailwind-icon" />
+                                        <img src="assets/images/typescript.png" alt="TypeScript" className="tailwind-icon" />
                                         <h3 className="tech-skill-heading">TypeScript</h3>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@ function Home() {
                                         <h3 className="tech-skill-heading">Webflow</h3>
                                     </div>
                                     <div className="cms tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/Divi.svg" />
+                                        <img src="assets/images/Divi.svg" />
                                         <h3 className="tech-skill-heading">Divi</h3>
                                     </div>
 
@@ -342,15 +342,15 @@ function Home() {
 
                                 <div className="d-flex gap-2 flex-wrap">
                                     <div className="ui-tool-icon tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/figma-icon.jpg" />
+                                        <img src="assets/images/figma-icon.jpg" />
                                         <h3 className="tech-skill-heading">Figma</h3>
                                     </div>
                                     <div className="ui-tool-icon tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/canva-img.jpg" />
+                                        <img src="assets/images/canva-img.jpg" />
                                         <h3 className="tech-skill-heading">Canva</h3>
                                     </div>
                                     <div className="ui-tool-icon tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/psd-img.jpg" />
+                                        <img src="assets/images/psd-img.jpg" />
                                         <h3 className="tech-skill-heading">Photoshop</h3>
                                     </div>
 

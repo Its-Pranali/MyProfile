@@ -103,7 +103,7 @@ function Header() {
                         <div className="header-top">
                             <div className="logo">
                                 <a className="site-logo" href="https://pranalinikam.html-5.me/">
-                                    <img className="logo-dark" src="../../assets/images/PRANALI-NIKAM-logo.png" alt="Site logo" />
+                                    <img className="logo-dark" src="assets/images/PRANALI-NIKAM-logo.png" alt="Site logo" />
                                 </a>
                             </div>
 
