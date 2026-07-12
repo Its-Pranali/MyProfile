@@ -36,8 +36,9 @@ function Home() {
                             </a></div>
                         </div>
                         <div className="col-md-5">
-                            <div className="me-img tmponhover">
-                                <img src="../../../public/assets/images/pranali-img.jpg" className="" />
+                            <div className="me-img tmponhover new-img">
+                                <img src="public/assets/images/pranali-img.jpg" />
+                                {/* <img src="../../../public/assets/images/pranali-img.jpg" className="" /> */}
                             </div>
                         </div>
                     </div>
