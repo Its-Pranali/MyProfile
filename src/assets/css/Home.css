@@ -600,8 +600,32 @@ svg:not(:root) {
     transform: translateY(-5px) scale(1.05);
 }
 
+.backend:hover {
+    border: 2px solid #0b9966 !important;
+    box-shadow: #0b996569 0px 14px 28px, #1ae19f54 0px 10px 10px;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.ui-tool-icon:hover {
+    border: 2px solid #3b82f6 !important;
+    box-shadow: #06b5d461 0px 14px 28px,  #3b83f64c 0px 10px 10px;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.dev-icon:hover,.ui-icon:hover,.cms-icon:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
 .cms-icon {
     background: linear-gradient(to right, #ef4444, #f97316);
+}
+
+.dev-icon {
+    background: linear-gradient(to right, #1ae19f, #0b9966);
+}
+
+.ui-icon {
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
 }
 
 .tech-skill-icon svg {

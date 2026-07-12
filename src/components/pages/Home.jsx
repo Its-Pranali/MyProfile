@@ -210,7 +210,7 @@ function Home() {
                     </div>
 
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6 mb-4">
                             <div className="skill-card">
                                 <div className="card-header d-flex align-items-center gap-3 mb-4">
                                     <div className="skill-icon globe-icon">
@@ -255,7 +255,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 mb-4">
                             <div className="skill-card">
                                 <div className="card-header d-flex align-items-center gap-3 mb-4">
                                     <div className="skill-icon cms-icon">
@@ -286,13 +286,98 @@ function Home() {
                                         <h3 className="tech-skill-heading">Webflow</h3>
                                     </div>
                                     <div className="cms tech-skill-icon text-light text-center">
-                                        <img src="../../assets/images/Divi.svg"/>
+                                        <img src="../../assets/images/Divi.svg" />
                                         <h3 className="tech-skill-heading">Divi</h3>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
+                        <div className="col-md-6 mb-4">
+                            <div className="skill-card">
+                                <div className="card-header d-flex align-items-center gap-3 mb-4">
+                                    <div className="skill-icon dev-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-infinity" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M471.1 96C405 96 353.3 137.3 320 174.6 286.7 137.3 235 96 168.9 96 75.8 96 0 167.8 0 256s75.8 160 168.9 160c66.1 0 117.8-41.3 151.1-78.6 33.3 37.3 85 78.6 151.1 78.6 93.1 0 168.9-71.8 168.9-160S564.2 96 471.1 96zM168.9 320c-40.2 0-72.9-28.7-72.9-64s32.7-64 72.9-64c38.2 0 73.4 36.1 94 64-20.4 27.6-55.9 64-94 64zm302.2 0c-38.2 0-73.4-36.1-94-64 20.4-27.6 55.9-64 94-64 40.2 0 72.9 28.7 72.9 64s-32.7 64-72.9 64z"></path></svg>
+                                    </div>
+
+                                    <div>
+                                        <h2 className="skill-heading mb-0">DevOps / Backend</h2>
+                                        <p className="skill-text mb-0">4 Technologies</p>
+                                    </div>
+                                </div>
+
+                                <div className="d-flex gap-2 flex-wrap">
+                                    <div className="backend tech-skill-icon text-light text-center">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-laravel" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504.4,115.83a5.72,5.72,0,0,0-.28-.68,8.52,8.52,0,0,0-.53-1.25,6,6,0,0,0-.54-.71,9.36,9.36,0,0,0-.72-.94c-.23-.22-.52-.4-.77-.6a8.84,8.84,0,0,0-.9-.68L404.4,55.55a8,8,0,0,0-8,0L300.12,111h0a8.07,8.07,0,0,0-.88.69,7.68,7.68,0,0,0-.78.6,8.23,8.23,0,0,0-.72.93c-.17.24-.39.45-.54.71a9.7,9.7,0,0,0-.52,1.25c-.08.23-.21.44-.28.68a8.08,8.08,0,0,0-.28,2.08V223.18l-80.22,46.19V63.44a7.8,7.8,0,0,0-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35,8.35,0,0,0-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36,9.36,0,0,0-.72-.94,9.46,9.46,0,0,0-.78-.6,9.8,9.8,0,0,0-.88-.68h0L115.61,1.07a8,8,0,0,0-8,0L11.34,56.49h0a6.52,6.52,0,0,0-.88.69,7.81,7.81,0,0,0-.79.6,8.15,8.15,0,0,0-.71.93c-.18.25-.4.46-.55.72a7.88,7.88,0,0,0-.51,1.24,6.46,6.46,0,0,0-.29.67,8.18,8.18,0,0,0-.28,2.1v329.7a8,8,0,0,0,4,6.95l192.5,110.84a8.83,8.83,0,0,0,1.33.54c.21.08.41.2.63.26a7.92,7.92,0,0,0,4.1,0c.2-.05.37-.16.55-.22a8.6,8.6,0,0,0,1.4-.58L404.4,400.09a8,8,0,0,0,4-6.95V287.88l92.24-53.11a8,8,0,0,0,4-7V117.92A8.63,8.63,0,0,0,504.4,115.83ZM111.6,17.28h0l80.19,46.15-80.2,46.18L31.41,63.44Zm88.25,60V278.6l-46.53,26.79-33.69,19.4V123.5l46.53-26.79Zm0,412.78L23.37,388.5V77.32L57.06,96.7l46.52,26.8V338.68a6.94,6.94,0,0,0,.12.9,8,8,0,0,0,.16,1.18h0a5.92,5.92,0,0,0,.38.9,6.38,6.38,0,0,0,.42,1v0a8.54,8.54,0,0,0,.6.78,7.62,7.62,0,0,0,.66.84l0,0c.23.22.52.38.77.58a8.93,8.93,0,0,0,.86.66l0,0,0,0,92.19,52.18Zm8-106.17-80.06-45.32,84.09-48.41,92.26-53.11,80.13,46.13-58.8,33.56Zm184.52,4.57L215.88,490.11V397.8L346.6,323.2l45.77-26.15Zm0-119.13L358.68,250l-46.53-26.79V131.79l33.69,19.4L392.37,178Zm8-105.28-80.2-46.17,80.2-46.16,80.18,46.15Zm8,105.28V178L455,151.19l33.68-19.4v91.39h0Z" fill="#F53003"></path></svg>
+                                        <h3 className="tech-skill-heading">Laravel</h3>
+                                    </div>
+                                    <div className="backend tech-skill-icon text-light text-center">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-php" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z" fill="#4F5B93"></path></svg>
+                                        <h3 className="tech-skill-heading">PHP</h3>
+                                    </div>
+                                    <div className="backend tech-skill-icon text-light text-center">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-github" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" fill="#F0DC4E"></path></svg>
+                                        <h3 className="tech-skill-heading">Git</h3>
+                                    </div>
+                                    <div className="backend tech-skill-icon text-light text-center">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-bitbucket" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z" fill="#1868DB"></path></svg>
+                                        <h3 className="tech-skill-heading">Bitbucket</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 mb-4">
+                            <div className="skill-card">
+                                <div className="card-header d-flex align-items-center gap-3 mb-4">
+                                    <div className="skill-icon ui-icon">
+                                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-tools" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z"></path></svg>
+                                    </div>
+
+                                    <div>
+                                        <h2 className="skill-heading mb-0">UI/UX & Design Tools</h2>
+                                        <p className="skill-text mb-0">3 Technologies</p>
+                                    </div>
+                                </div>
+
+                                <div className="d-flex gap-2 flex-wrap">
+                                    <div className="ui-tool-icon tech-skill-icon text-light text-center">
+                                        <img src="../../assets/images/figma-icon.jpg" />
+                                        <h3 className="tech-skill-heading">Figma</h3>
+                                    </div>
+                                    <div className="ui-tool-icon tech-skill-icon text-light text-center">
+                                        <img src="../../assets/images/canva-img.jpg" />
+                                        <h3 className="tech-skill-heading">Canva</h3>
+                                    </div>
+                                    <div className="ui-tool-icon tech-skill-icon text-light text-center">
+                                        <img src="../../assets/images/psd-img.jpg" />
+                                        <h3 className="tech-skill-heading">Photoshop</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="projects-sec py-5">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="d-flex gap-2 justify-content-center align-items-center mb-4">
+                            <div className="skill-icon cms-icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-briefcase" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg>
+                            </div>
+                            <h2 className="heading text-center mb-0">Featured Projects</h2>
+                            <div className="skill-icon cms-icon">
+                                <svg class="ekit-svg-icon icon-briefcase" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.6 8h-7.2v-2.4c0-1.323-1.077-2.4-2.4-2.4h-8c-1.323 0-2.4 1.077-2.4 2.4v2.4h-7.2c-1.323 0-2.4 1.077-2.4 2.4v17.6c0 1.323 1.077 2.4 2.4 2.4h27.2c1.323 0 2.4-1.077 2.4-2.4v-17.6c0-1.323-1.077-2.4-2.4-2.4zM11.2 5.6c0-0.441 0.359-0.8 0.8-0.8h8c0.441 0 0.8 0.359 0.8 0.8v2.4h-9.6v-2.4zM2.4 9.6h27.2c0.441 0 0.8 0.359 0.8 0.8v12h-3.2v-0.8c0-0.442-0.358-0.8-0.8-0.8h-3.2c-0.442 0-0.8 0.358-0.8 0.8v0.8h-12.8v-0.8c0-0.442-0.358-0.8-0.8-0.8h-3.2c-0.442 0-0.8 0.358-0.8 0.8v0.8h-3.2v-12c0-0.441 0.359-0.8 0.8-0.8zM25.6 22.4v1.6h-1.6v-1.6h1.6zM8 22.4v1.6h-1.6v-1.6h1.6zM29.6 28.8h-27.2c-0.441 0-0.8-0.359-0.8-0.8v-4h3.2v0.8c0 0.442 0.358 0.8 0.8 0.8h3.2c0.442 0 0.8-0.358 0.8-0.8v-0.8h12.8v0.8c0 0.442 0.358 0.8 0.8 0.8h3.2c0.442 0 0.8-0.358 0.8-0.8v-0.8h3.2v4c0 0.441-0.359 0.8-0.8 0.8z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-md-12">
+                        <p>Exploring the intersection of artificial intelligence and modern web development through innovative solutions.</p>
                     </div>
                 </div>
             </section>
