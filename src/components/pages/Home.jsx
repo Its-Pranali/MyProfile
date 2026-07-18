@@ -73,19 +73,19 @@ function Home() {
                     <div className="row">
                         <div className="col-md-3 my-2">
                             <div className="counter-card text-center">
-                                <h2 className="counter-count">30+</h2>
+                                <h2 className="counter-count">2+</h2>
                                 <p className="counter-text">Years Experience</p>
                             </div>
                         </div>
                         <div className="col-md-3 my-2">
                             <div className="counter-card text-center">
-                                <h2 className="counter-count">10+</h2>
+                                <h2 className="counter-count">30+</h2>
                                 <p className="counter-text">Websites Build</p>
                             </div>
                         </div>
                         <div className="col-md-3 my-2">
                             <div className="counter-card text-center">
-                                <h2 className="counter-count">5+</h2>
+                                <h2 className="counter-count">10+</h2>
                                 <p className="counter-text">Frontend Tools</p>
                             </div>
                         </div>
