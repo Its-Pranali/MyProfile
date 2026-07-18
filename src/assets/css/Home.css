@@ -751,14 +751,14 @@ svg:not(:root) {
     background-color: #374151;
     background-image: linear-gradient(to right, #1f2937, #374151);
     padding: 7px 10px;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     border-radius: 7px;
     border-color: hsla(0, 0%, 100%, .1);
     border: 1px solid;
     will-change: transform;
     transform: translateY(-2px) scale(1.05);
-    color:#fff;
+    color: #fff;
 }
 
 .git-btn:hover {
@@ -766,6 +766,46 @@ svg:not(:root) {
     will-change: transform;
     transform: translateY(-2px) scale(1.05);
 }
+
+.project-div {
+    gap: 10px;
+}
+
+.project-view-btn {
+    margin-top: 20px;
+}
+
+@media(max-width:426px) {
+    .heading {
+        font-size: 34px !important;
+    }
+
+    .me-img {
+        margin-top: 15px;
+    }
+
+    .me-img img {
+        height: 375px;
+    }
+
+    .company-name {
+        font-size: 26px;
+    }
+
+    .project-div {
+        gap: 3px;
+    }
+
+    .project-view-btn {
+        margin-top: 20px;
+    }
+    .annimate-footer{
+        max-width:90%;
+        margin:auto;
+        padding:25px 0px;
+    }
+}
+
 
 /* Send Icon */
 /*figcaption a {*/
