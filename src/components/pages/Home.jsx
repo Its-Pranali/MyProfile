@@ -387,9 +387,10 @@ function Home() {
                             <div className="project-container text-light">
                                 <button className="project-btn">Live</button>
                                 <h3 className="fitness-heading">Scientific Calculator</h3>
-                                <p>Fitness World is a modern and responsive fitness website developed using WordPress. The website is designed to provide users with information about fitness programs, workouts, and healthy lifestyle practices. It features a clean layout, easy navigation, and mobile-friendly design to ensure a smooth user experience across all devices.</p>
+                                <p>Built a modern scientific calculator using React, Vite, JavaScript, and CSS3. Supports both Standard and Scientific calculator modes. Added 5 customizable themes with unique visual styles. Implemented keyboard support for faster calculations. Added calculation history with up to 50 saved calculations. Included memory functions like MC, MR, and M+.
+</p>
 
-                                <p>The website includes sections such as home, services, workout programs, and contact information, allowing visitors to explore different fitness options and stay motivated toward achieving their health goals. The design focuses on visually appealing elements, engaging content, and fast loading performance.</p>
+                                <p>Added Degree and Radian modes for trigonometric calculations.Used localStorage to save themes, modes, and calculation history. Designed a fully responsive UI with animations, glassmorphism, and modern CSS effects.</p>
 
                                 <div class="project">
                                     <figure>

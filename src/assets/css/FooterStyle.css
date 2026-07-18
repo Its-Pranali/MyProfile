@@ -8,11 +8,15 @@
     /*background:#07121f;*/
     border-radius:12px;
     width:100%;
+    max-width:1140px;
+    margin:auto;
     background-position: center;
     background-size: cover;
     background-image: url('../images/bg-footer.jpg');
     /*margin:40px auto;*/
 }
+
+
 
 /* Animated Border Glow */
 .annimate-footer:before{
