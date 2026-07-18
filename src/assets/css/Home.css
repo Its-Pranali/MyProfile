@@ -498,7 +498,8 @@ svg:not(:root) {
 
 .tech-btn {
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 /* Hover Effect */
@@ -608,11 +609,13 @@ svg:not(:root) {
 
 .ui-tool-icon:hover {
     border: 2px solid #3b82f6 !important;
-    box-shadow: #06b5d461 0px 14px 28px,  #3b83f64c 0px 10px 10px;
+    box-shadow: #06b5d461 0px 14px 28px, #3b83f64c 0px 10px 10px;
     transform: translateY(-5px) scale(1.05);
 }
 
-.dev-icon:hover,.ui-icon:hover,.cms-icon:hover {
+.dev-icon:hover,
+.ui-icon:hover,
+.cms-icon:hover {
     transform: scale(1.1) rotate(360deg);
 }
 
@@ -637,3 +640,139 @@ svg:not(:root) {
     box-shadow: rgb(241 75 61 / 45%) 0px 14px 28px, rgb(248 109 28 / 41%) 0px 10px 10px;
     transform: translateY(-5px) scale(1.05);
 }
+
+.project-container {
+    background-color: #031E34;
+    border-radius: 7px;
+    padding: 25px;
+}
+
+.project-btn {
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 2px 10px 2px 25px;
+    text-transform: uppercase;
+    color: #4ade80;
+    background-image: url('assets/images/btg-bg-2.svg');
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    width: auto;
+    position: relative;
+}
+
+.project-btn:hover {
+    color: #4ade80;
+    border: 2px solid rgba(59, 130, 246, 0.3);
+}
+
+.project-btn:before {
+    content: "";
+    background-color: #4ade80;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 6px;
+    border-radius: 8px;
+    left: 10px;
+}
+
+.fitness-heading {
+    font-family: "Lato", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #6EC1E4;
+
+}
+
+.project-container p {
+    font-family: "Lato", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.project figure {
+    /* width: 400px;
+      height: 300px; */
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px #ddd;
+
+}
+
+.project figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.project figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+}
+
+.project figure:hover figcaption {
+    opacity: 1;
+}
+
+.project figure:hover img {
+    transform: scale(1.2);
+}
+
+.send-icon svg {
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    background: #f2f2f2;
+    padding: 5px;
+}
+
+.project-view-btn .tmp-btn.btn-border {
+    line-height: 35px;
+}
+
+.project-view-btn .tmp-btn {
+    height: 40px !important;
+    padding: 0px 15px;
+}
+
+.git-btn {
+    width: auto;
+    background-color: #374151;
+    background-image: linear-gradient(to right, #1f2937, #374151);
+    padding: 7px 10px;
+    display:flex;
+    align-items:center;
+    border-radius: 7px;
+    border-color: hsla(0, 0%, 100%, .1);
+    border: 1px solid;
+    will-change: transform;
+    transform: translateY(-2px) scale(1.05);
+    color:#fff;
+}
+
+.git-btn:hover {
+    border-color: rgba(96, 165, 250, .5);
+    will-change: transform;
+    transform: translateY(-2px) scale(1.05);
+}
+
+/* Send Icon */
+/*figcaption a {*/
+/*  font-size: 30px;*/
+/*  color: #2c3e50;*/
+/*  background: white;*/
+/*  padding: 12px;*/
+/*  border-radius: 50%;*/
+/*  text-decoration: none;*/
+/*}*/

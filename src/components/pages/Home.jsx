@@ -362,26 +362,233 @@ function Home() {
             </section>
 
             <section className="projects-sec py-5">
-                <div className="row">
-                    <div className="col-md-12">
-                        <div className="d-flex gap-2 justify-content-center align-items-center mb-4">
-                            <div className="skill-icon cms-icon">
-                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-briefcase" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="d-flex gap-2 justify-content-center align-items-center mb-4">
+                                <div className="skill-icon cms-icon">
+                                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-briefcase" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M320 336c0 8.84-7.16 16-16 16h-96c-8.84 0-16-7.16-16-16v-48H0v144c0 25.6 22.4 48 48 48h416c25.6 0 48-22.4 48-48V288H320v48zm144-208h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128v32z"></path></svg>
+                                </div>
+                                <h2 className="heading text-center mb-0">Featured Projects</h2>
+                                <div className="skill-icon cms-icon">
+                                    <svg class="ekit-svg-icon icon-briefcase" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.6 8h-7.2v-2.4c0-1.323-1.077-2.4-2.4-2.4h-8c-1.323 0-2.4 1.077-2.4 2.4v2.4h-7.2c-1.323 0-2.4 1.077-2.4 2.4v17.6c0 1.323 1.077 2.4 2.4 2.4h27.2c1.323 0 2.4-1.077 2.4-2.4v-17.6c0-1.323-1.077-2.4-2.4-2.4zM11.2 5.6c0-0.441 0.359-0.8 0.8-0.8h8c0.441 0 0.8 0.359 0.8 0.8v2.4h-9.6v-2.4zM2.4 9.6h27.2c0.441 0 0.8 0.359 0.8 0.8v12h-3.2v-0.8c0-0.442-0.358-0.8-0.8-0.8h-3.2c-0.442 0-0.8 0.358-0.8 0.8v0.8h-12.8v-0.8c0-0.442-0.358-0.8-0.8-0.8h-3.2c-0.442 0-0.8 0.358-0.8 0.8v0.8h-3.2v-12c0-0.441 0.359-0.8 0.8-0.8zM25.6 22.4v1.6h-1.6v-1.6h1.6zM8 22.4v1.6h-1.6v-1.6h1.6zM29.6 28.8h-27.2c-0.441 0-0.8-0.359-0.8-0.8v-4h3.2v0.8c0 0.442 0.358 0.8 0.8 0.8h3.2c0.442 0 0.8-0.358 0.8-0.8v-0.8h12.8v0.8c0 0.442 0.358 0.8 0.8 0.8h3.2c0.442 0 0.8-0.358 0.8-0.8v-0.8h3.2v4c0 0.441-0.359 0.8-0.8 0.8z"></path></svg>
+                                </div>
                             </div>
-                            <h2 className="heading text-center mb-0">Featured Projects</h2>
-                            <div className="skill-icon cms-icon">
-                                <svg class="ekit-svg-icon icon-briefcase" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M29.6 8h-7.2v-2.4c0-1.323-1.077-2.4-2.4-2.4h-8c-1.323 0-2.4 1.077-2.4 2.4v2.4h-7.2c-1.323 0-2.4 1.077-2.4 2.4v17.6c0 1.323 1.077 2.4 2.4 2.4h27.2c1.323 0 2.4-1.077 2.4-2.4v-17.6c0-1.323-1.077-2.4-2.4-2.4zM11.2 5.6c0-0.441 0.359-0.8 0.8-0.8h8c0.441 0 0.8 0.359 0.8 0.8v2.4h-9.6v-2.4zM2.4 9.6h27.2c0.441 0 0.8 0.359 0.8 0.8v12h-3.2v-0.8c0-0.442-0.358-0.8-0.8-0.8h-3.2c-0.442 0-0.8 0.358-0.8 0.8v0.8h-12.8v-0.8c0-0.442-0.358-0.8-0.8-0.8h-3.2c-0.442 0-0.8 0.358-0.8 0.8v0.8h-3.2v-12c0-0.441 0.359-0.8 0.8-0.8zM25.6 22.4v1.6h-1.6v-1.6h1.6zM8 22.4v1.6h-1.6v-1.6h1.6zM29.6 28.8h-27.2c-0.441 0-0.8-0.359-0.8-0.8v-4h3.2v0.8c0 0.442 0.358 0.8 0.8 0.8h3.2c0.442 0 0.8-0.358 0.8-0.8v-0.8h12.8v0.8c0 0.442 0.358 0.8 0.8 0.8h3.2c0.442 0 0.8-0.358 0.8-0.8v-0.8h3.2v4c0 0.441-0.359 0.8-0.8 0.8z"></path></svg>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12">
+                            <p className="text-light text-center">Exploring the intersection of artificial intelligence and modern web development through innovative solutions.</p>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-md-6 my-2">
+                            <div className="project-container text-light">
+                                <button className="project-btn">Live</button>
+                                <h3 className="fitness-heading">Scientific Calculator</h3>
+                                <p>Fitness World is a modern and responsive fitness website developed using WordPress. The website is designed to provide users with information about fitness programs, workouts, and healthy lifestyle practices. It features a clean layout, easy navigation, and mobile-friendly design to ensure a smooth user experience across all devices.</p>
+
+                                <p>The website includes sections such as home, services, workout programs, and contact information, allowing visitors to explore different fitness options and stay motivated toward achieving their health goals. The design focuses on visually appealing elements, engaging content, and fast loading performance.</p>
+
+                                <div class="project">
+                                    <figure>
+                                        <img decoding="async" src="assets/images/calculator-banner.png" alt="Thumb" />
+                                        <a href="https://bigbearvans.wuaze.com/">
+                                        </a><figcaption><a href="https://bigbearvans.wuaze.com/">
+                                        </a><a class="send-icon" href="https://bigbearvans.wuaze.com/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-6 h-6 text-blue-400">
+                                                    <path d="M15 3h6v6"></path>
+                                                    <path d="M10 14 21 3"></path>
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                </svg>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+
+                                <div class="tech-btn">
+                                    <span class="gradient-tag">React</span>
+                                    <span class="gradient-tag">Vite</span>
+                                    <span class="gradient-tag">HTML</span>
+                                    <span class="gradient-tag">CSS</span>
+                                    <span class="gradient-tag">JavaScript</span>
+                                    <span class="gradient-tag">Bootstrap</span>
+                                    <span class="gradient-tag">Git</span>
+                                </div>
+
+                                <div class="cons_w_wrapper project-view-btn d-flex justify-content-end gap-2 mt-2"> 
+                                    <a href="https://github.com/Its-Pranali/Calculator" target="_blank" className="git-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </a>
+                                <a href="https://pranali-scientific-calc.vercel.app/" class="tmp-btn temp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Demo</span>
+                                        <span class="btn-hack"></span>
+                                        <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
+                                        <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
+                                        <span class="btn-icon">
+                                            <i>
+                                                <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                    </path>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                        <span class="btn-icon">
+                                            <i>
+                                                <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                    </path>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                    </span>
+                                </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div className="col-md-6 my-2">
+                            <div className="project-container text-light">
+                                <button className="project-btn">Live</button>
+                                <h3 className="fitness-heading">Fitness World</h3>
+                                <p>Fitness World is a modern and responsive fitness website developed using WordPress. The website is designed to provide users with information about fitness programs, workouts, and healthy lifestyle practices. It features a clean layout, easy navigation, and mobile-friendly design to ensure a smooth user experience across all devices.</p>
+
+                                <p>The website includes sections such as home, services, workout programs, and contact information, allowing visitors to explore different fitness options and stay motivated toward achieving their health goals. The design focuses on visually appealing elements, engaging content, and fast loading performance.</p>
+
+                                <div class="project">
+                                    <figure>
+                                        
+                                         <img decoding="async" src="assets/images/fitness-banner.png" alt="Thumb" />
+                                        <a href="https://fitnessworld.wuaze.com/">
+                                        </a><figcaption><a href="https://fitnessworld.wuaze.com/">
+                                        </a><a class="send-icon" href="https://fitnessworld.wuaze.com/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-6 h-6 text-blue-400">
+                                                    <path d="M15 3h6v6"></path>
+                                                    <path d="M10 14 21 3"></path>
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                </svg>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+
+                                <div class="tech-btn">
+                                    <span class="gradient-tag">WordPress</span>
+                                    <span class="gradient-tag">Elementor</span>
+                                    <span class="gradient-tag">HTML</span>
+                                    <span class="gradient-tag">CSS</span>
+                                    <span class="gradient-tag">JavaScript</span>
+                                    <span class="gradient-tag">Bootstrap</span>
+                                </div>
+
+                                <div class="cons_w_wrapper project-view-btn d-flex justify-content-end gap-2 mt-2"> 
+                                    {/* <button className="git-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </button> */}
+                                <a href="https://fitnessworld.wuaze.com/" class="tmp-btn temp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Demo</span>
+                                        <span class="btn-hack"></span>
+                                        <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
+                                        <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
+                                        <span class="btn-icon">
+                                            <i>
+                                                <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                    </path>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                        <span class="btn-icon">
+                                            <i>
+                                                <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                    </path>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                    </span>
+                                </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-md-6 my-2">
+                            <div className="project-container text-light">
+                                <button className="project-btn">Live</button>
+                                <h3 className="fitness-heading">Big Bear Vans</h3>
+                                <p>Nestled in the heart of Big Bear City, California, Big Bear Vans transforms ordinary Sprinter, Transit, and Promaster vans into extraordinary custom camper vans built for real adventure.</p>
+
+                                <p>We believe the road doesn't have to mean roughing it. Every van we build comes fully equipped with the comforts of home — cozy beds, functional kitchens, indoor bathrooms, and dinette areas — all packed into a compact, road-ready class B RV. Whether you're planning weekend getaways or embracing full-time van life, our team designs each conversion around how you actually want to travel.</p>
+
+                                <div class="project">
+                                    <figure>
+                                        
+                                         <img decoding="async" src="assets/images/bbv-banner.png" alt="Thumb" />
+                                        <a href="https://bigbearvans.wuaze.com/">
+                                        </a><figcaption><a href="https://bigbearvans.wuaze.com/">
+                                        </a><a class="send-icon" href="https://bigbearvans.wuaze.com/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-6 h-6 text-blue-400">
+                                                    <path d="M15 3h6v6"></path>
+                                                    <path d="M10 14 21 3"></path>
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                </svg>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+
+                                <div class="tech-btn">
+                                    <span class="gradient-tag">WordPress</span>
+                                    <span class="gradient-tag">Elementor</span>
+                                    <span class="gradient-tag">HTML</span>
+                                    <span class="gradient-tag">CSS</span>
+                                    <span class="gradient-tag">JavaScript</span>
+                                    <span class="gradient-tag">Bootstrap</span>
+                                </div>
+
+                                <div class="cons_w_wrapper project-view-btn d-flex justify-content-end gap-2 mt-2"> 
+                                    {/* <button className="git-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </button> */}
+                                <a href="https://bigbearvans.wuaze.com/" class="tmp-btn temp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
+                                    <span class="icon-reverse-wrapper">
+                                        <span class="btn-text">Demo</span>
+                                        <span class="btn-hack"></span>
+                                        <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
+                                        <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
+                                        <span class="btn-icon">
+                                            <i>
+                                                <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                    </path>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                        <span class="btn-icon">
+                                            <i>
+                                                <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                    </path>
+                                                </svg>
+                                            </i>
+                                        </span>
+                                    </span>
+                                </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div className="row">
-                    <div className="col-md-12">
-                        <p>Exploring the intersection of artificial intelligence and modern web development through innovative solutions.</p>
-                    </div>
-                </div>
             </section>
+
         </Main>
     );
 }
