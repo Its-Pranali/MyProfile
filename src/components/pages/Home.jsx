@@ -46,7 +46,7 @@ function Home() {
             </section>
 
 
-            <section className="about-sec py-5">
+            <section className="about-sec py-5" id="About">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -99,7 +99,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="experience py-5 text-light">
+            <section className="experience py-5 text-light" id="Experience">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -201,7 +201,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="skill-sec py-5">
+            <section className="skill-sec py-5" id="Skills">
                 <div className="container">
                     <div className="row text-center">
                         <div className="col-md-12 mb-3">
@@ -361,7 +361,7 @@ function Home() {
                 </div>
             </section>
 
-            <section className="projects-sec py-5">
+            <section className="projects-sec py-5" id="Projects">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
