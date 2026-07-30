@@ -383,7 +383,7 @@ function Home() {
                     </div>
 
                     <div className="row">
-                        <div className="col-md-6 my-2">
+                        {/* <div className="col-md-6 my-2">
                             <div className="project-container text-light">
                                 <button className="project-btn">Live</button>
                                 <h3 className="fitness-heading">Scientific Calculator</h3>
@@ -522,7 +522,7 @@ function Home() {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-6 my-2">
                             <div className="project-container text-light">
@@ -668,7 +668,6 @@ function Home() {
 
                                 <div class="project">
                                     <figure>
-
                                         <img decoding="async" src="assets/images/googlepay-banner.png" alt="Thumb" />
                                         <a href="https://google-pay-pranali.vercel.app/" target="_blank">
                                         </a><figcaption><a href="https://google-pay-pranali.vercel.app/" target="_blank">
