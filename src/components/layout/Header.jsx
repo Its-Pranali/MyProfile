@@ -9,7 +9,7 @@ function Header() {
                         <div className="col-lg-12">
                             <div className="header-content">
                                 <div className="logo">
-                                    <a className="site-logo" href="https://marketifythemes.net/wp/virtuo/1/" aria-label="Go to homepage">
+                                    <a className="site-logo" href="https://pranalis-portfolio.vercel.app/" aria-label="Go to homepage">
                                         <img className="logo-dark" src="../../assets/images/PRANALI-NIKAM-logo.png" alt="Site logo" />
                                         
                                         <img className="logo-white" src="../../assets/images/PRANALI-NIKAM-logo.png" alt="Site logo" />
