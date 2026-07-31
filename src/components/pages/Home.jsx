@@ -383,7 +383,7 @@ function Home() {
                     </div>
 
                     <div className="row">
-                        {/* <div className="col-md-6 my-2">
+                        <div className="col-md-6 my-2">
                             <div className="project-container text-light">
                                 <button className="project-btn">Live</button>
                                 <h3 className="fitness-heading">Scientific Calculator</h3>
@@ -522,7 +522,7 @@ function Home() {
                                 </div>
 
                             </div>
-                        </div> */}
+                        </div>
 
                         <div className="col-md-6 my-2">
                             <div className="project-container text-light">
