@@ -452,7 +452,78 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="col-md-6 my-2">
+                         <div className="col-md-6 my-2">
+                            <div className="project-container text-light">
+                                <button className="project-btn">Live</button>
+                                <h3 className="fitness-heading">Google Pay</h3>
+                                <p>Developed a responsive digital payment application inspired by Google Pay using React.js. The project focuses on creating a modern and user-friendly payment experience with a clean interface for managing digital transactions. It includes features a payment dashboard and responsive layouts designed for a smooth user experience across different devices. Implemented reusable React components and efficient state management to ensure a scalable and maintainable codebase. Designed intuitive navigation and interactive UI elements to improve user engagement and provide a seamless payment experience. Optimized the application for performance, responsiveness, and cross-device compatibility.</p>
+
+                                <div class="project">
+                                    <figure>
+                                        <img decoding="async" src="assets/images/googlepay-banner.png" alt="Thumb" />
+                                        <a href="https://google-pay-pranali.vercel.app/" target="_blank">
+                                        </a><figcaption><a href="https://google-pay-pranali.vercel.app/" target="_blank">
+                                        </a><a class="send-icon" href="https://google-pay-pranali.vercel.app/" target="_blank">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-6 h-6 text-blue-400">
+                                                    <path d="M15 3h6v6"></path>
+                                                    <path d="M10 14 21 3"></path>
+                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                </svg>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+
+                                <div class="tech-btn">
+                                   <span class="gradient-tag">React</span>
+                                    <span class="gradient-tag">Vite</span>
+                                    <span class="gradient-tag">HTML</span>
+                                    <span class="gradient-tag">CSS</span>
+                                    <span class="gradient-tag">JavaScript</span>
+                                    <span class="gradient-tag">Bootstrap</span>
+                                    <span class="gradient-tag">Git</span>
+                                </div>
+
+                                <div class="cons_w_wrapper project-view-btn d-flex justify-content-end gap-2 mt-2">
+                                    {/* <button className="git-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </button> */}
+
+                                    <a href="https://github.com/Its-Pranali/Google-pay" target="_blank" className="git-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    </a>
+
+                                    <a href="https://google-pay-pranali.vercel.app/" target="_blank" class="tmp-btn temp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
+                                        <span class="icon-reverse-wrapper">
+                                            <span class="btn-text">Demo</span>
+                                            <span class="btn-hack"></span>
+                                            <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
+                                            <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
+                                            <span class="btn-icon">
+                                                <i>
+                                                    <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                            </span>
+                                            <span class="btn-icon">
+                                                <i>
+                                                    <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
+                                                        </path>
+                                                    </svg>
+                                                </i>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        {/* <div className="col-md-6 my-2">
                             <div className="project-container text-light">
                                 <button className="project-btn">Live</button>
                                 <h3 className="fitness-heading">Ticketing System</h3>
@@ -522,7 +593,7 @@ function Home() {
                                 </div>
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="col-md-6 my-2">
                             <div className="project-container text-light">
@@ -660,76 +731,7 @@ function Home() {
                             </div>
                         </div>
 
-                        <div className="col-md-6 my-2">
-                            <div className="project-container text-light">
-                                <button className="project-btn">Live</button>
-                                <h3 className="fitness-heading">Google Pay</h3>
-                                <p>Developed a responsive digital payment application inspired by Google Pay using React.js. The project focuses on creating a modern and user-friendly payment experience with a clean interface for managing digital transactions. It includes features such as a payment dashboard, contact and transaction interfaces, quick payment actions, and responsive layouts designed for a smooth user experience across different devices.</p>
-
-                                <div class="project">
-                                    <figure>
-                                        <img decoding="async" src="assets/images/googlepay-banner.png" alt="Thumb" />
-                                        <a href="https://google-pay-pranali.vercel.app/" target="_blank">
-                                        </a><figcaption><a href="https://google-pay-pranali.vercel.app/" target="_blank">
-                                        </a><a class="send-icon" href="https://google-pay-pranali.vercel.app/" target="_blank">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link w-6 h-6 text-blue-400">
-                                                    <path d="M15 3h6v6"></path>
-                                                    <path d="M10 14 21 3"></path>
-                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                </svg>
-                                            </a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-
-
-                                <div class="tech-btn">
-                                   <span class="gradient-tag">React</span>
-                                    <span class="gradient-tag">Vite</span>
-                                    <span class="gradient-tag">HTML</span>
-                                    <span class="gradient-tag">CSS</span>
-                                    <span class="gradient-tag">JavaScript</span>
-                                    <span class="gradient-tag">Bootstrap</span>
-                                    <span class="gradient-tag">Git</span>
-                                </div>
-
-                                <div class="cons_w_wrapper project-view-btn d-flex justify-content-end gap-2 mt-2">
-                                    {/* <button className="git-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                                    </button> */}
-
-                                    <a href="https://github.com/Its-Pranali/Google-pay" target="_blank" className="git-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github w-5 h-5 text-gray-300 group-hover/btn:text-white relative z-10"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                                    </a>
-
-                                    <a href="https://google-pay-pranali.vercel.app/" target="_blank" class="tmp-btn temp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
-                                        <span class="icon-reverse-wrapper">
-                                            <span class="btn-text">Demo</span>
-                                            <span class="btn-hack"></span>
-                                            <img decoding="async" src="assets/images/btg-bg.svg" alt="" class="btn-bg" />
-                                            <img decoding="async" src="assets/images/btg-bg-2.svg" alt="" class="btn-bg-hover" />
-                                            <span class="btn-icon">
-                                                <i>
-                                                    <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
-                                                        </path>
-                                                    </svg>
-                                                </i>
-                                            </span>
-                                            <span class="btn-icon">
-                                                <i>
-                                                    <svg class="fn__svg fn__svg_arrow-right " width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z">
-                                                        </path>
-                                                    </svg>
-                                                </i>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
+                       
                        
                     </div>
                 </div>
