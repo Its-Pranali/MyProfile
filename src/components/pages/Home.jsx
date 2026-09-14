@@ -1,7 +1,7 @@
 import Main from "../layout/Main";
 import BannerAnimi from "./BannerAnimi";
 import "../../assets/css/Home.css";
-import { Check } from "lucide-react";
+import { Check, Mail, MapPin, Phone, Send } from "lucide-react";
 
 function Home() {
     return (
@@ -452,7 +452,7 @@ function Home() {
                             </div>
                         </div>
 
-                         <div className="col-md-6 my-2">
+                        <div className="col-md-6 my-2">
                             <div className="project-container text-light">
                                 <button className="project-btn">Live</button>
                                 <h3 className="fitness-heading">Google Pay</h3>
@@ -476,7 +476,7 @@ function Home() {
 
 
                                 <div class="tech-btn">
-                                   <span class="gradient-tag">React</span>
+                                    <span class="gradient-tag">React</span>
                                     <span class="gradient-tag">Vite</span>
                                     <span class="gradient-tag">HTML</span>
                                     <span class="gradient-tag">CSS</span>
@@ -663,7 +663,7 @@ function Home() {
                             </div>
                         </div>
 
-                         <div className="col-md-6 my-2">
+                        <div className="col-md-6 my-2">
                             <div className="project-container text-light">
                                 <button className="project-btn">Live</button>
                                 <h3 className="fitness-heading">Big Bear Vans</h3>
@@ -731,8 +731,120 @@ function Home() {
                             </div>
                         </div>
 
-                       
-                       
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section className="contact-sec py-5" id="Contact">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="contact-block overflow-hidden">
+                                <div className="tmp-light light-top-left active"></div>
+                                <div className="row align-items-center">
+                                    <div className="col-lg-5 mb-5 mb-lg-0 pe-lg-4">
+                                        <h2 className="contact-title">
+                                            Get Ready To <br />
+                                            <span>Create Great</span>
+                                        </h2>
+
+                                        <div className="contact-info-list">
+                                            <div className="contact-info-item d-flex align-items-center mb-4">
+                                                <div className="contact-icon-wrap">
+                                                    <Mail size={18} color="#139bfd" />
+                                                </div>
+                                                <div className="contact-info-content ms-3">
+                                                    <span className="contact-label">E-mail:</span>
+                                                    <a href="mailto:pranalinikam1000@gmail.com" className="contact-value text-decoration-none">
+                                                        pranalinikam1000@gmail.com
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div className="contact-info-item d-flex align-items-center mb-4">
+                                                <div className="contact-icon-wrap">
+                                                    <MapPin size={18} color="#139bfd" />
+                                                </div>
+                                                <div className="contact-info-content ms-3">
+                                                    <span className="contact-label">Location:</span>
+                                                    <span className="contact-value">
+                                                        Pune, Maharashtra, India
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div className="contact-info-item d-flex align-items-center">
+                                                <div className="contact-icon-wrap">
+                                                    <Phone size={18} color="#139bfd" />
+                                                </div>
+                                                <div className="contact-info-content ms-3">
+                                                    <span className="contact-label">Contact:</span>
+                                                    <a href="tel:+919359875721" className="contact-value text-decoration-none">
+                                                        +91 9359875721
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-lg-7 ps-lg-4">
+                                        <div className="contact-form-wrap">
+                                            <h6 className="form-sub-heading">GET IN TOUCH</h6>
+                                            <form onSubmit={(e) => e.preventDefault()}>
+                                                <div className="row g-3">
+                                                    <div className="col-md-6">
+                                                        <input
+                                                            type="text"
+                                                            className="form-control contact-input"
+                                                            placeholder="Your Name"
+                                                            required
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <input
+                                                            type="tel"
+                                                            className="form-control contact-input"
+                                                            placeholder="Phone Number"
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <input
+                                                            type="email"
+                                                            className="form-control contact-input"
+                                                            placeholder="Your Email"
+                                                            required
+                                                        />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <input
+                                                            type="text"
+                                                            className="form-control contact-input"
+                                                            placeholder="Subject"
+                                                        />
+                                                    </div>
+                                                    <div className="col-12">
+                                                        <textarea
+                                                            rows="5"
+                                                            className="form-control contact-input contact-textarea"
+                                                            placeholder="Your Message"
+                                                            required
+                                                        ></textarea>
+                                                    </div>
+                                                    <div className="col-12 mt-3 text-start">
+                                                        <button type="submit" className="contact-submit-btn">
+                                                            <span>Send Message</span>
+                                                            <Send size={16} className="ms-2" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
