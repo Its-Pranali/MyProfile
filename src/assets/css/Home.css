@@ -1010,3 +1010,16 @@ svg:not(:root) {
         font-size: 32px;
     }
 }
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-loader {
+    animation: spin 1s linear infinite;
+}

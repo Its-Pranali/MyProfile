@@ -1,9 +1,112 @@
+import { useState } from "react";
 import Main from "../layout/Main";
 import BannerAnimi from "./BannerAnimi";
 import "../../assets/css/Home.css";
-import { Check, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Check, Mail, MapPin, Phone, Send, Loader2, AlertCircle, CheckCircle2 } from "lucide-react";
 
 function Home() {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+
+    const [status, setStatus] = useState({
+        loading: false,
+        success: null,
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus({ loading: true, success: null, message: '' });
+
+        const endpoints = [];
+        if (import.meta.env.VITE_API_URL) {
+            endpoints.push(import.meta.env.VITE_API_URL);
+        }
+        // Primary Vercel serverless SMTP endpoint
+        endpoints.push('/api/contact');
+
+        if (window.location.port === '5173') {
+            endpoints.push('/api/send_mail.php');
+            endpoints.push('http://localhost/MyProfile/api/send_mail.php');
+        } else if (window.location.pathname.startsWith('/MyProfile')) {
+            endpoints.push('/MyProfile/api/send_mail.php');
+        }
+        endpoints.push('api/send_mail.php');
+
+        let lastResult = null;
+        let successHandled = false;
+
+        for (const url of endpoints) {
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                let result = null;
+                try {
+                    result = await response.json();
+                } catch {
+                    result = null;
+                }
+
+                lastResult = result;
+
+                if (response.ok && result && result.success) {
+                    setStatus({
+                        loading: false,
+                        success: true,
+                        message: result.message || 'Thank you! Your message has been sent successfully.',
+                    });
+                    setFormData({
+                        name: '',
+                        phone: '',
+                        email: '',
+                        subject: '',
+                        message: '',
+                    });
+                    successHandled = true;
+                    break;
+                } else if (result && result.message) {
+                    setStatus({
+                        loading: false,
+                        success: false,
+                        message: result.message,
+                    });
+                    successHandled = true;
+                    break;
+                }
+            } catch (err) {
+                // Try next endpoint in loop
+            }
+        }
+
+        if (!successHandled) {
+            setStatus({
+                loading: false,
+                success: false,
+                message: lastResult?.message || 'Could not connect to mail server. Please ensure Apache is running in XAMPP.',
+            });
+        }
+    };
+
     return (
         <Main>
 
@@ -792,50 +895,108 @@ function Home() {
                                     <div className="col-lg-7 ps-lg-4">
                                         <div className="contact-form-wrap">
                                             <h6 className="form-sub-heading">GET IN TOUCH</h6>
-                                            <form onSubmit={(e) => e.preventDefault()}>
+                                            <form onSubmit={handleSubmit}>
                                                 <div className="row g-3">
                                                     <div className="col-md-6">
                                                         <input
                                                             type="text"
+                                                            name="name"
+                                                            value={formData.name}
+                                                            onChange={handleChange}
                                                             className="form-control contact-input"
                                                             placeholder="Your Name"
                                                             required
+                                                            disabled={status.loading}
                                                         />
                                                     </div>
                                                     <div className="col-md-6">
                                                         <input
                                                             type="tel"
+                                                            name="phone"
+                                                            value={formData.phone}
+                                                            onChange={handleChange}
                                                             className="form-control contact-input"
                                                             placeholder="Phone Number"
+                                                            disabled={status.loading}
                                                         />
                                                     </div>
                                                     <div className="col-md-6">
                                                         <input
                                                             type="email"
+                                                            name="email"
+                                                            value={formData.email}
+                                                            onChange={handleChange}
                                                             className="form-control contact-input"
                                                             placeholder="Your Email"
                                                             required
+                                                            disabled={status.loading}
                                                         />
                                                     </div>
                                                     <div className="col-md-6">
                                                         <input
                                                             type="text"
+                                                            name="subject"
+                                                            value={formData.subject}
+                                                            onChange={handleChange}
                                                             className="form-control contact-input"
                                                             placeholder="Subject"
+                                                            disabled={status.loading}
                                                         />
                                                     </div>
                                                     <div className="col-12">
                                                         <textarea
                                                             rows="5"
+                                                            name="message"
+                                                            value={formData.message}
+                                                            onChange={handleChange}
                                                             className="form-control contact-input contact-textarea"
                                                             placeholder="Your Message"
                                                             required
+                                                            disabled={status.loading}
                                                         ></textarea>
                                                     </div>
+
+                                                    {status.message && (
+                                                        <div className="col-12">
+                                                            <div
+                                                                className={`alert ${status.success ? 'alert-success' : 'alert-danger'} d-flex align-items-center py-2 px-3 mb-0`}
+                                                                role="alert"
+                                                                style={{
+                                                                    borderRadius: '10px',
+                                                                    fontSize: '14px',
+                                                                    background: status.success ? 'rgba(34, 197, 94, 0.15)' : 'rgba(239, 68, 68, 0.15)',
+                                                                    border: `1px solid ${status.success ? '#22c55e' : '#ef4444'}`,
+                                                                    color: status.success ? '#4ade80' : '#f87171'
+                                                                }}
+                                                            >
+                                                                {status.success ? (
+                                                                    <CheckCircle2 size={18} className="me-2 flex-shrink-0" />
+                                                                ) : (
+                                                                    <AlertCircle size={18} className="me-2 flex-shrink-0" />
+                                                                )}
+                                                                <div>{status.message}</div>
+                                                            </div>
+                                                        </div>
+                                                    )}
+
                                                     <div className="col-12 mt-3 text-start">
-                                                        <button type="submit" className="contact-submit-btn">
-                                                            <span>Send Message</span>
-                                                            <Send size={16} className="ms-2" />
+                                                        <button
+                                                            type="submit"
+                                                            className="contact-submit-btn"
+                                                            disabled={status.loading}
+                                                            style={{ opacity: status.loading ? 0.75 : 1, cursor: status.loading ? 'not-allowed' : 'pointer' }}
+                                                        >
+                                                            {status.loading ? (
+                                                                <>
+                                                                    <span>Sending...</span>
+                                                                    <Loader2 size={16} className="ms-2 spin-loader" />
+                                                                </>
+                                                            ) : (
+                                                                <>
+                                                                    <span>Send Message</span>
+                                                                    <Send size={16} className="ms-2" />
+                                                                </>
+                                                            )}
                                                         </button>
                                                     </div>
                                                 </div>
