@@ -119,7 +119,7 @@ function Home() {
                             <h1 className="heading">Pranali Nikam</h1>
                             <p className="text">Crafting modern, responsive, and user-centric websites with React, WordPress & modern front-end technologies.
                                 Turning great ideas into real digital experiences.</p>
-                            <div className="cons_w_wrapper download-resume"> <a href="assets/images/Pranali_S_Nikam.pdf" download="" className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
+                            <div className="cons_w_wrapper download-resume"> <a href="assets/images/Pranali_Nikam.pdf" download="" className="tmp-btn hover-icon-reverse btn-border tmp-modern-button radius-round download-icon text-decoration-none" data-align="">
                                 <span className="icon-reverse-wrapper">
                                     <span className="btn-text">Download Resume</span>
                                     <span className="btn-hack"></span>
